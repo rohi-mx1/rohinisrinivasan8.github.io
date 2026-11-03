@@ -1,643 +1,893 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rohini Srinivasan — Full Stack Developer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav id="nav">
-      <div class="container">
-        <div class="nav-mark">KS<span>.</span></div>
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#Events">Meetups</a>
-          <a href="#connect">Connect</a>
-          
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohini S | Python Full Stack Developer</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav id="nav">
+    <div class="container nav-inner">
+
+        <a href="#heroSection" class="nav-mark">RS<span>.</span></a>
+
+        <button class="menu-toggle" id="menuToggle">☰</button>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#Events">Activities</a>
+            <a href="#connect">Connect</a>
         </div>
-        <a
-          href="Source/Kavin_Data_Analyst_Resume.pdf"
-          download
-          class="nav-cta"
-          >Resume</a
-        >
-      </div>
-    </nav>
 
-    <section class="hero" id="heroSection">
-      <canvas id="net-canvas"></canvas>
-      <div class="hero-vignette"></div>
-      <div class="hero-overlay-content">
-        <div class="container hero-flex">
-          <div class="hero-text-panel">
+        <a href="assets/Rohini_Resume.pdf" download class="nav-cta">
+            Resume ↓
+        </a>
+
+    </div>
+</nav>
+
+
+<!-- HERO SECTION -->
+<section class="hero" id="heroSection">
+
+    <canvas id="net-canvas"></canvas>
+    <div class="hero-vignette"></div>
+
+    <div class="container hero-content">
+
+        <div class="hero-text-panel">
+
             <div class="hero-eyebrow">
-              <span class="dot"></span>Data Analyst — Bengaluru, India
+                <span class="dot"></span>
+               FULL STACK DEVELOPER · TAMIL NADU, INDIA
             </div>
-            <h2 class="kinetic-name" id="kineticName">Rohini Srinivasan</h2>
-            <h1 class="hero-h">
-              Numbers tell stories. 
-              <span class="amber">I'm a full stack developer.</span>
+
+            <p class="name-kicker">Hello, I'm</p>
+
+            <h1 class="kinetic-name">
+                Rohini <span class="accent">S.</span>
             </h1>
+
+            <h2 class="hero-h">
+                Building web experiences.<br>
+                <span class="accent">Connecting ideas with code.</span>
+            </h2>
+
             <p class="hero-sub">
-                AI & Data Science graduate with expertise in SQL, Power BI, and Python analytics. 
-                Backed by hands-on business analysis experience in Supply Chain Management. 
-                Building comprehensive data analytics projects to uncover insights and drive 
-                informed decision-making.
+                B.Tech Artificial Intelligence and Data Science student
+                graduating in 2027, skilled in Java, Flask, HTML, CSS,
+                JavaScript, React and MySQL. Interested in developing
+                responsive web applications, REST APIs and user-friendly
+                software solutions.
             </p>
+
             <div class="hero-cta">
-              <a href="#projects" class="btn btn-fill">View Projects</a>
-              <a
-                href="Source/Kavin_Data_Analyst_Resume.pdf"
-                download
-                class="btn btn-ghost"
-                >Download Resume</a
-              >
+                <a href="#projects" class="btn btn-fill">View Projects ↘️</a>
+                <a href="assets/Rohini(1).pdf" download class="btn btn-ghost">
+                    Download Resume ↓
+                </a>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="hero-hint">SCROLL — explore my data journey</div>
-    </section>
 
-    <div class="stat-strip">
-      <div class="container">
-        <div class="grid4">
-          <div class="cell">
-            <strong>2.3M</strong><span>Records Analyzed</span>
-          </div>
-          <div class="cell">
-            <strong>5+</strong><span>Projects Completed</span>
-          </div>
-          <div class="cell">
-            <strong>$24.9M</strong><span>Revenue Analyzed</span>
-          </div>
-          <div class="cell">
-            <strong>6</strong><span>Dashboards Built</span>
-          </div>
         </div>
-      </div>
+
+        <div class="hero-side">
+
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+
+            <div class="hero-monogram">
+                R<span>S</span>
+            </div>
+
+            <div class="floating-tag tag-one">Python</div>
+            <div class="floating-tag tag-two">Flask · React</div>
+            <div class="floating-tag tag-three">MySQL</div>
+
+        </div>
+
     </div>
 
-    <section id="about">
-      <div class="container">
-        <div class="eyebrow">About</div>
-        <h2 class="sec-h">From AI & Data Science to real-world analytics.</h2>
-        <p class="sec-lead">
-        Built on an AI & Data Science foundation, strengthened by business experience, 
-        and focused on turning data into actionable insights.
-        </p>
-        <div class="about-grid">
-          <div class="reveal">
-            <div class="about-photo-wrap">
-              <div class="about-photo-ring"></div>
-              <img
-                src="Source/photo.jpeg"
-                alt="Kavin Srinivasan"
-                class="about-photo"
-              />
-            </div>
-            <div class="pivot-chip">
-              🎓 AI & Data Science → Full Stack Development → Full Stack Developer
-            </div>
-            <p style="font-size: 14.5px; color: var(--text-dim)">
-             Currently a Data Science with AI Apprentice at BDreamz Global Solutions — 
-             working with real-world datasets, performing data analysis, 
-             and developing dashboards to generate actionable insights.
-            </p>
-          </div>
-          <div class="fact-list reveal">
-            <div class="fact-row">
-              <span>Based in</span><span>Bengaluru, India</span>
-            </div>
-            <div class="fact-row">
-              <span>Current role</span
-              ><span>Data Science with AI Apprentice</span>
-            </div>
-            <div class="fact-row">
-              <span>Company</span><span>BDreamz Global Solutions</span>
-            </div>
-            <div class="fact-row">
-              <span>Education</span
-              ><span>B.Tech.AI — CGPA 8.4</span>
-            </div>
-            <div class="fact-row">
-              <span>Core Focus</span><span>Data Analytics</span>
-            </div>
-            <div class="fact-row">
-              <span>Availability</span><span>Immediate Joiner</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="process">
-      <div class="container">
-        <div class="eyebrow">How I Work</div>
-        <h2 class="sec-h">From raw data to a decision.</h2>
-        <div class="process-row reveal">
-          <div class="p-step">
-            <div class="p-num">01</div>
-            <div class="p-icon">📥</div>
-            <h4>Collect</h4>
-            <p>Pull data from SQL, Excel</p>
-            <span class="p-arrow">→</span>
-          </div>
-          <div class="p-step">
-            <div class="p-num">02</div>
-            <div class="p-icon">🧹</div>
-            <h4>Clean</h4>
-            <p>Handle nulls, duplicates, outliers</p>
-            <span class="p-arrow">→</span>
-          </div>
-          <div class="p-step">
-            <div class="p-num">03</div>
-            <div class="p-icon">🔍</div>
-            <h4>Analyze</h4>
-            <p>EDA &amp; statistical testing</p>
-            <span class="p-arrow">→</span>
-          </div>
-          <div class="p-step">
-            <div class="p-num">04</div>
-            <div class="p-icon">📊</div>
-            <h4>Visualize</h4>
-            <p>Power BI Dashboards</p>
-            <span class="p-arrow">→</span>
-          </div>
-          <div class="p-step">
-            <div class="p-num">05</div>
-            <div class="p-icon">🎯</div>
-            <h4>Deliver</h4>
-            <p>Actionable insight for stakeholders</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills">
-      <div class="container">
-        <div class="eyebrow">Skills</div>
-        <h2 class="sec-h">The toolkit.</h2>
-      </div>
-      <div class="skill-marquee">
-        <div class="marquee-track">
-          <span class="on">GCP BIG QUERY</span><span>SQL QUERYING</span
-          ><span class="on">POWER BI</span><span>DAX</span>
-          <span class="on">SQL</span><span>JOINS & SUB-QUERIES</span
-          ><span class="on">POWER QUERY</span><span>DATA TRANSFORMATION</span>
-          <span class="on">DASHBOARD DESIGN</span><span>DATA STORYTELLING</span
-          ><span class="on">EDA</span><span>STATISTICAL ANALYSIS</span>
-          <span class="on">EXCEL</span><span>PIVOT TABLES</span
-          ><span class="on">PYTHON</span><span>FEATURE ENGINEERING</span>
-          <span class="on">DATA VALIDATION</span><span>DATABASE ARCHITECTURE</span
-          ><span class="on">GOOGLE COLAB</span><span>VS CODE</span>
-        </div>
-      </div>
-      <div class="container">
-        <div class="skill-table reveal">
-          <div class="skill-row">
-            <div class="label">Database &amp; SQL</div>
-            <div class="vals">
-              <span>GCP BigQuery</span><span>MYSQL</span><span>Window Functions & CTEs</span
-              ><span>Stored Procedures</span>
-              <span>Data Modeling</span>
-              <span>Star Schema Design</span>
-            </div>
-          </div>
-          <div class="skill-row">
-            <div class="label">Analytics &amp; BI</div>
-            <div class="vals">
-              <span>Power BI Desktop</span><span>Power Query & DAX</span
-              ><span>Row-Level Security (RLS)</span><span>Data Visualization (including AI Visuals)</span>
-              <span>KPI Tracking & Reporting</span> <span>Interactive Dashboards</span>
-            </div>
-          </div>
-          <div class="skill-row">
-            <div class="label">Programming</div>
-            <div class="vals">
-              <span>Python</span><span>Data Manipulation (Pandas & Numpy)</span>
-              <span>Feature Engineering & Selection</span><span>Statistical Analysis</span><span>Data Cleaning & Preprocessing</span>
-            </div>
-          </div>
-
-          <div class="skill-row">
-            <div class="label">Business & Reporting</div>
-            <div class="vals">
-              <span>Exploratory Data Analysis (EDA)</span><span>Root Cause Investigation</span>
-              <span>Stakeholder Reporting</span><span>Pattern & Trend Identification</span>
-            </div>
-          </div>
-
-          <div class="skill-row">
-            <div class="label">Domain &amp; Experience</div>
-            <div class="vals">
-              <span>Supply Chain Management (Business Analyst - ITOrizon)</span><span>Banking & Finance Analytics (Loan Project)</span
-              ><span>Retail Analytics (Adventure Works Dashboard)</span><span>Circulation & Library Analytics</span
-              ><span>Data-Driven Decision Making</span>
-            </div>
-          </div>
-           <div class="skill-row">
-            <div class="label">Tools</div>
-            <div class="vals">
-              <span>GCP Big Query</span><span>MySQL</span
-              ><span>Power BI Desktop</span><span>Excel</span
-              ><span>Visual Studio Code</span><span>Google Colab</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience">
-      <div class="container">
-        <div class="eyebrow">Experience</div>
-        <h2 class="sec-h">Where it's been applied.</h2>
-        <div class="exp-block reveal">
-          <div class="exp-top">
-            <div>
-              <h3>Data Science with AI Apprentice</h3>
-              <div class="co">BDreamz Global Solutions Pvt. Ltd.</div>
-            </div>
-            <div class="dt">Dec 2025 – Present · Bengaluru, India</div>
-          </div>
-          <ul class="exp-list">
-            <li>
-              Cleaned and transformed datasets using Excel, SQL, and Python (Pandas)
-              by handling missing values, duplicates, and data inconsistencies.
-            </li>
-            <li>
-              Wrote SQL queries to extract, filter, join, and analyze data to generate meaningful business insights.
-            </li>
-            <li>
-              Created and maintained SQL tables and datasets, ensuring data accuracy and consistency for reporting and analysis.
-            </li>
-            <li>
-            Built interactive Power BI dashboards using DAX, Power Query, and data modeling to track key business metrics and trends.
-            </li>
-            <li>
-              Used Excel formulas, Pivot Tables, and charts to analyze data and prepare structured reports for decision-making.
-            </li>
-            <li>
-               Performed exploratory data analysis using Python (NumPy, Pandas, Matplotlib) to identify patterns, trends, and anomalies in datasets.
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="container">
-        <div class="eyebrow">Projects</div>
-        <h2 class="sec-h">Three problems, from data to decisions.</h2>
-        <p class="sec-lead">
-        End-to-end analytics projects covering Advanced SQL querying, 
-        Python analysis and Power BI dashboards 
-        — turning raw data into meaningful business insights.
-        </p>
-
-        <div class="project-card reveal">
-          <div class="project-head">
-            <h3>Bank Loan Management System</h3>
-            <div class="dt">July 2026 · SQL · GCP Big Query</div>
-          </div>
-          
-          <div class="media-row">
-            <div class="para1" id="pdfProject1">
-              <p style="margin-bottom: 10px;">
-                <strong style="color: var(--amber);">Problem:</strong> Banks often struggle to get a clear view of loan performance and risk because the data is scattered across disconnected records, making it hard for teams to spot repayment issues or risky lending patterns before they become costly.
-              </p>
-              <p style="margin-bottom: 10px;">
-                <strong style="color: var(--amber);">Solution:</strong> I built and structured an 8-table relational database with close to 305K records in BigQuery, then wrote SQL queries using CTEs, window functions, and multi-table joins to dig into borrower behavior and loan trends.
-              </p>
-              <p>
-                <strong style="color: var(--amber);">Impact:</strong> Answered 13 real business questions a bank might actually ask, giving a clearer picture of loan performance and default patterns while sharpening my SQL skills for BFSI-focused analyst roles.
-              </p>
-            </div>
-            <div class="media-3d dashboard-3d" id="p1-3d">
-              <img
-                src="Source/BLMS_Graph_Architecture.png"
-                alt="BLMS Graph Architecture"
-              />
-              <span class="hint">Drag to rotate</span>
-            </div>
-          </div>
-          <div class="kpi-row">
-            <div><strong>305K+</strong><span>Transactions & Payments</span></div>
-            <div><strong>8</strong><span>Tables Designed</span></div>
-          </div>
-          <div class="project-footer">
-            <div class="tool-pills">
-              <span>GCP Big Query</span><span>Graph Architecture</span>
-            </div>
-            <a
-              class="gh-link"
-              href="https://github.com/kavinsrinivasan12/Bank-Loan-Management-System.git"
-              target="_blank"
-              rel="noopener"
-              >GitHub →</a
-            >
-          </div>
-        </div>
-
-       <div class="project-card reveal">
-          <div class="project-head">
-            <h3>Adventure Works</h3>
-            <div class="dt">August 2026 · Power BI · Power Query · Data Modeling</div>
-          </div>
-          
-          <div class="media-row">
-            <div class="para1" id="pdfProject1">
-              <p style="margin-bottom: 10px;">
-                <strong style="color: var(--amber);">Problem:</strong> Sales, product and customer data lived in separate raw files with no clear structure, so it was hard to get a real read on revenue trends or how products and customers were actually performing.
-              </p>
-              <p style="margin-bottom: 10px;">
-                <strong style="color: var(--amber);">Solution:</strong> I cleaned and shaped that raw data into a proper star schema directly in Power BI, then built out a 4-page dashboard – covering executive KPIs, sales trends, product and returns performance and customer behavior – using over 20 custom DAX measures along with features like AI-powered Key Influencers, decomposition trees, bookmarks, anomaly detection and drill-through pages.
-              </p>
-              <p>
-                <strong style="color: var(--amber);">Impact:</strong> Turned messy, disconnected files into 4-page interactive dashboards people could actually explore and make decisions from, letting me practice real end-to-end BI work – from data cleaning to polished, decision-ready visuals.
-              </p>
-            </div>
-            <div class="media-3d dashboard-3d" id="p2-3d">
-              <img src="Source/Adventure_Works_Dashboard.png" 
-              alt="Adventure Works Dashboard"/>
-              <span class="hint">Drag to rotate</span>
-            </div>
-          </div>
-          <div class="kpi-row">
-            <div><strong>$24.9M </strong><span>Revenue Analyzed</span></div>
-            <div><strong>76K+</strong><span>Records Processed</span></div>
-            <div><strong>4</strong><span>Dashboards Delivered</span></div>
-          </div>
-          <div class="project-footer">
-            <div class="tool-pills">
-              <span>Power BI</span><span>DAX</span><span>Geographic Maps</span><span>AI Visuals</span>
-            </div>
-            <a
-              class="gh-link"
-              href="https://github.com/kavinsrinivasan12/Adventure-Works-Power-BI.git"
-              target="_blank"
-              rel="noopener"
-              >GitHub →</a
-            >
-          </div>
-        </div>
-
-      <div class="project-card reveal">
-          <div class="project-head">
-            <h3>Customer Shopping Behavior Analysis</h3>
-            <div class="dt">September 2026 · Python · MySQL · Power BI</div>
-          </div>
-          <div class="media-row">
-            <div class="para1" id="pdfProject1">
-              <p style="margin-bottom: 10px;">
-                <strong style="color: var(--amber);">Problem:</strong> The business had thousands of customer transactions, but no clear view of who was spending the most or whether discounts and subscriptions were working, so marketing decisions relied on gut feeling.
-              </p>
-              <p style="margin-bottom: 10px;">
-                <strong style="color: var(--amber);">Solution:</strong> I cleaned the raw data in Python, wrote SQL queries on spending by gender, age group, subscriptions, and discounts, and segmented customers into New, Returning and Loyal. I then built an interactive Power BI dashboard on a dataset of 3.9K customers.
-              </p>
-              <p>
-                <strong style="color: var(--amber);">Impact:</strong> The dashboard gave a clear picture of 233K in total revenue, with clothing as the top category and young adults as the top spenders. Discounted purchases made up about 43% of revenue, while only 27% of customers were subscribed, pointing to room to grow subscriptions.
-              </p>
-            </div>
-            <div class="media-3d dashboard-3d" id="p3-3d">
-              <img
-                src="Source/Customer_Shopping_Behavior_Analysis_Dashboard.png"
-                alt="Customer Shopping Dashboard"
-              />
-              <span class="hint">Drag to rotate</span>
-            </div>
-          </div>
-          <div class="kpi-row">
-            <div><strong>233K</strong><span>Revenue Analyzed</span></div>
-            <div><strong>3.9K</strong><span>Records Processed</span></div>
-            <div><strong>1</strong><span>Dashboard Delivered</span></div>
-          </div>
-          <div class="project-footer">
-            <div class="tool-pills">
-              <span>Python EDA</span><span>Feature Engineering</span><span>Dashboard</span>
-            </div>
-            <a
-              class="gh-link"
-              href="https://github.com/kavinsrinivasan12/Customer-Shopping-Behavior-Analysis.git"
-              target="_blank"
-              rel="noopener"
-              >GitHub →</a
-            >
-          </div>
-        </div>
-    </section>
-
-    <section id="credentials">
-      <div class="container">
-        <div class="two-col reveal">
-          <!-- Certifications Column -->
-          <div>
-            <div class="eyebrow">Certifications</div>
-            <h2 class="sec-h">Continuing to level up.</h2>
-            <div class="cert-list">
-              <div class="cert-row">
-                <h4>Data Analytics Job Simulation</h4>
-                <p>Deloitte</p>
-              </div>
-              <div class="cert-row">
-                <h4>Advanced SQL</h4>
-                <p>HackerRank</p>
-              </div>
-              <div class="cert-row">
-                <h4>Advanced Prompt Engineering Techniques</h4>
-                <p>LinkedIn Learning</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Education / Foundation Column -->
-          <div>
-            <div class="eyebrow">Education</div>
-            <h2 class="sec-h">The foundation.</h2>
-            <div class="edu-list">
-              <div class="edu-row2">
-                <h4>B.Tech — Artificial Intelligence &amp; Data Science</h4>
-                <p>Mahendra Engineering College — 2020–2024</p>
-                <div class="score">CGPA: 8.3</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    
- <section id="Events">
-  <div class="container">
-    <div class="eyebrow">Meetups</div>
-    <h2 class="sec-h">Events &amp; Meetups.</h2>
-    <p class="sec-lead">
-      Exploring AI, data, security, and modern technology through community events.
-    </p>
-
-    <!-- 2-Column 50-50 Grid Container -->
-    <div class="meetup-grid">
-      
-      <!-- Event 1 -->
-      <div class="meetup-card">
-        <div class="meetup-image">
-          <img
-            src="Source/Cloudera_event.jpeg"
-            alt="AI Agents, Docker and Software Security Meetup in Bengaluru"
-          />
-        </div>
-        <div class="meetup-content">
-          <div class="dt">
-            Bengaluru · September 2026 · Organized by Future of Data: Bangalore
-          </div>
-          <div class="meetup-subdt">Cloudera · Docker · Collabnix</div>
-
-          <h3>Agents in the AI Governance Era</h3>
-
-          <p>
-            Attended an insightful tech meetup in Bengaluru covering modern AI, data
-            engineering, and software security. The sessions explored building
-            reliable AI agents for production, secure sandboxed execution with
-            Docker, AI governance, and software supply chain security. Gained practical
-            insights into deploying scalable and secure AI systems while learning from
-            industry experts and connecting with fellow technology professionals.
-          </p>
-
-
-
-          
-        </div>
-      </div>
-
-      <!-- Event 2 -->
-      <div class="meetup-card">
-        <div class="meetup-image">
-          <img
-            src="Source/hpe_event.jpeg"
-            alt="Cloud Native & AI Meetup at Hewlett Packard Enterprise Bengaluru"
-          />
-        </div>
-        <div class="meetup-content">
-          <div class="dt">
-            BENGALURU · SEPTEMBER 2026 · ORGANIZED BY KSUG.AI &amp; AI XCHANGE
-          </div>
-          <div class="meetup-subdt">HPE · KSUG.AI · AI XCHANGE</div>
-
-          <h3>Cloud Native &amp; AI Meetup @HPE</h3>
-
-          <p>
-            Attended an insightful community meetup hosted at Hewlett Packard Enterprise
-            (HPE) covering enterprise-grade agentic AI, graph retrieval systems,
-            multi-tenant container orchestration, and hybrid cloud automation.
-            Explored practical architectures for building governed AI agents with context
-            graphs, GraphRAG with agentic memory via Neo4j and GCP, rethinking
-            Kubernetes multi-tenancy, and operationalizing workloads using HPE Morpheus.
-          </p>
-
-        </div>
-      </div>
-
+    <div class="hero-hint">
+        SCROLL — explore my developer journey
     </div>
-  </div>
+
 </section>
 
 
+<!-- STATISTICS -->
+<div class="stat-strip">
+    <div class="container stats">
 
-    <section id="connect">
-      <div class="container connect-grid">
+        <div class="cell">
+            <strong>8.58</strong>
+            <span>CGPA</span>
+        </div>
+
+        <div class="cell">
+            <strong>3</strong>
+            <span>Projects</span>
+        </div>
+
+        <div class="cell">
+            <strong>2027</strong>
+            <span>Graduating Batch</span>
+        </div>
+
+        <div class="cell">
+            <strong>2</strong>
+            <span>Hackathon Participations</span>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- ABOUT -->
+<section id="about">
+
+    <div class="container">
+
+        <div class="eyebrow">01 / ABOUT</div>
+
+        <h2 class="sec-h">
+            From AI & Data Science<br>
+            <span class="accent">to full stack development.</span>
+        </h2>
+
+        <p class="sec-lead">
+            I am a B.Tech Artificial Intelligence and Data Science student
+            with an interest in building responsive applications and
+            practical software solutions. I enjoy problem-solving,
+            learning new technologies and working collaboratively.
+        </p>
+
+        <div class="about-grid">
+
+            <div class="about-card reveal">
+
+                <div class="avatar-box">
+                    <span>RS</span>
+                    <i>✦</i>
+                </div>
+
+                <div class="pivot-chip">
+                    AI & Data Science →  Full Stack Development
+                </div>
+
+                <p>
+                    My projects have given me exposure to web application
+                    development, REST APIs, machine learning and
+                    IoT-based monitoring systems.
+                </p>
+
+            </div>
+
+            <div class="fact-list reveal">
+
+                <div class="fact-row">
+                    <span>Based in</span>
+                    <b>Tamil Nadu, India</b>
+                </div>
+
+                <div class="fact-row">
+                    <span>Education</span>
+                    <b>B.Tech — AI & Data Science</b>
+                </div>
+
+                <div class="fact-row">
+                    <span>College</span>
+                    <b>Mahendra Engineering College</b>
+                </div>
+
+                <div class="fact-row">
+                    <span>Graduation</span>
+                    <b>2027</b>
+                </div>
+
+                <div class="fact-row">
+                    <span>CGPA</span>
+                    <b>8.58</b>
+                </div>
+
+                <div class="fact-row">
+                    <span>Career Focus</span>
+                    <b> Full Stack Development</b>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- DEVELOPMENT APPROACH -->
+<section id="process" class="section-alt">
+
+    <div class="container">
+
+        <div class="eyebrow">02 / DEVELOPMENT APPROACH</div>
+
+        <h2 class="sec-h">
+            How I approach<br>
+            <span class="accent">building an application.</span>
+        </h2>
+
+        <p class="sec-lead">
+            A simple development workflow that connects the user interface,
+            application logic and data.
+        </p>
+
+        <div class="process-row reveal">
+
+            <div class="p-step">
+                <div class="p-num">01</div>
+                <div class="p-icon">💡</div>
+                <h4>Understand</h4>
+                <p>Identify the problem and requirements</p>
+            </div>
+
+            <div class="p-step">
+                <div class="p-num">02</div>
+                <div class="p-icon">🎨</div>
+                <h4>Design</h4>
+                <p>Plan the interface and user flow</p>
+            </div>
+
+            <div class="p-step">
+                <div class="p-num">03</div>
+                <div class="p-icon">⌨️</div>
+                <h4>Develop</h4>
+                <p>Build with front-end and back-end tools</p>
+            </div>
+
+            <div class="p-step">
+                <div class="p-num">04</div>
+                <div class="p-icon">🧪</div>
+                <h4>Test</h4>
+                <p>Test, debug and improve features</p>
+            </div>
+
+            <div class="p-step">
+                <div class="p-num">05</div>
+                <div class="p-icon">🚀</div>
+                <h4>Deliver</h4>
+                <p>Prepare the application for use</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills">
+
+    <div class="container">
+
+        <div class="eyebrow">03 / SKILLS</div>
+
+        <h2 class="sec-h">My developer toolkit.</h2>
+
+    </div>
+
+    <div class="skill-marquee">
+        <div class="marquee-track">
+            <span>PYTHON</span>
+            <span>JAVASCRIPT</span>
+            <span>JAVA</span>
+            <span>SQL</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>REACT</span>
+            <span>FLASK</span>
+            <span>MYSQL</span>
+            <span>GITHUB</span>
+            <span>VS CODE</span>
+
+            <span>PYTHON</span>
+            <span>JAVASCRIPT</span>
+            <span>JAVA</span>
+            <span>SQL</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>REACT</span>
+            <span>FLASK</span>
+            <span>MYSQL</span>
+            <span>GITHUB</span>
+            <span>VS CODE</span>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="skill-table reveal">
+
+            <div class="skill-row">
+                <div class="label">Programming Languages</div>
+                <div class="vals">
+                    <span>Python</span>
+                    <span>JavaScript</span>
+                    <span>Java</span>
+                    <span>SQL</span>
+                </div>
+            </div>
+
+            <div class="skill-row">
+                <div class="label">Front-End Development</div>
+                <div class="vals">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>React</span>
+                    <span>Responsive Web Design</span>
+                </div>
+            </div>
+
+            <div class="skill-row">
+                <div class="label">Back-End Development</div>
+                <div class="vals">
+                    <span>Flask</span>
+                    <span>REST APIs</span>
+                </div>
+            </div>
+
+            <div class="skill-row">
+                <div class="label">Database</div>
+                <div class="vals">
+                    <span>MySQL</span>
+                    <span>MySQL Workbench</span>
+                </div>
+            </div>
+
+            <div class="skill-row">
+                <div class="label">Tools</div>
+                <div class="vals">
+                    <span>GitHub</span>
+                    <span>VS Code</span>
+                </div>
+            </div>
+
+            <div class="skill-row">
+                <div class="label">Core Skills</div>
+                <div class="vals">
+                    <span>Problem Solving</span>
+                    <span>Teamwork</span>
+                    <span>Communication</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section-alt">
+
+    <div class="container">
+
+        <div class="eyebrow">04 / EXPERIENCE</div>
+
+        <h2 class="sec-h">
+            Learning through<br>
+            <span class="accent">hands-on experience.</span>
+        </h2>
+
+        <div class="exp-block reveal">
+
+            <div class="exp-top">
+
+                <div>
+                    <h3>Project Intern</h3>
+                    <div class="co">Technohacks</div>
+                </div>
+
+                <div class="dt">December 2025</div>
+
+            </div>
+
+            <ul class="exp-list">
+                <li>
+                    Worked with real-world datasets to identify patterns
+                    and gain practical exposure to data analysis and
+                    problem-solving.
+                </li>
+
+                <li>
+                    Applied machine learning techniques to datasets,
+                    gaining hands-on experience in developing
+                    data-driven solutions.
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects">
+
+    <div class="container">
+
+        <div class="eyebrow">05 / PROJECTS</div>
+
+        <h2 class="sec-h">
+            Projects built<br>
+            <span class="accent">to solve problems.</span>
+        </h2>
+
+        <p class="sec-lead">
+            Academic and practical projects across full stack development,
+            machine learning and IoT.
+        </p>
+
+
+        <!-- PROJECT 1 -->
+        <div class="project-card reveal">
+
+            <div class="project-head">
+                <h3>Distraction Reminder</h3>
+                <div class="dt">
+                    July 2025 · Python · Flask · JavaScript · MySQL · NLP
+                </div>
+            </div>
+
+            <div class="media-row">
+
+                <div class="para1">
+
+                    <p>
+                        <strong>Problem:</strong>
+                        User distractions can interrupt focus and make it
+                        difficult to stay on a task.
+                    </p>
+
+                    <p>
+                        <strong>Solution:</strong>
+                        Built a responsive web application using Flask,
+                        HTML, CSS and JavaScript that detects user
+                        distractions and delivers timely reminders.
+                    </p>
+
+                    <p>
+                        <strong>Implementation:</strong>
+                        Stored user activity data in MySQL and developed
+                        Flask REST API endpoints.
+                    </p>
+
+                </div>
+
+                <div class="project-visual visual-one">
+                    <div class="window-dots">
+                        <i></i><i></i><i></i>
+                    </div>
+
+                    <div class="mock-title">FOCUS REMINDER</div>
+                    <div class="focus-ring">FOCUS</div>
+                    <div class="mock-line"></div>
+
+                    <span class="hint">
+                        Stay focused · One task at a time
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="project-footer">
+                <div class="tool-pills">
+                    <span>Python</span>
+                    <span>Flask</span>
+                    <span>JavaScript</span>
+                    <span>MySQL</span>
+                    <span>NLP</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- PROJECT 2 -->
+        <div class="project-card reveal">
+
+            <div class="project-head">
+                <h3>Smart Aviation Safety System</h3>
+                <div class="dt">October 2025 · Python · Machine Learning</div>
+            </div>
+
+            <div class="media-row">
+
+                <div class="para1">
+
+                    <p>
+                        <strong>Problem:</strong>
+                        Aviation data can contain patterns associated
+                        with potential safety risks.
+                    </p>
+
+                    <p>
+                        <strong>Solution:</strong>
+                        Developed a machine-learning-based system that
+                        analyses aviation data to identify patterns
+                        associated with potential safety risks.
+                    </p>
+
+                    <p>
+                        <strong>Purpose:</strong>
+                        Supported risk assessment and safer,
+                        better-informed decision-making.
+                    </p>
+
+                </div>
+
+                <div class="project-visual visual-two">
+
+                    <div class="radar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <b>SAFETY<br>ANALYSIS</b>
+                    </div>
+
+                    <span class="hint">Pattern identification</span>
+
+                </div>
+
+            </div>
+
+            <div class="project-footer">
+                <div class="tool-pills">
+                    <span>Python</span>
+                    <span>Machine Learning</span>
+                    <span>Aviation Data</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- PROJECT 3 -->
+        <div class="project-card reveal">
+
+            <div class="project-head">
+                <h3>IoT and Edge-Based Smart Telecom Tower Monitoring System</h3>
+                <div class="dt">April 2026 · NodeMCU · DHT11 · SW-420</div>
+            </div>
+
+            <div class="media-row">
+
+                <div class="para1">
+
+                    <p>
+                        <strong>Problem:</strong>
+                        Telecom tower conditions such as temperature
+                        and vibration need to be monitored.
+                    </p>
+
+                    <p>
+                        <strong>Solution:</strong>
+                        Monitored tower temperature, vibration and
+                        power conditions using NodeMCU (ESP8266) sensors.
+                    </p>
+
+                    <p>
+                        <strong>Output:</strong>
+                        Displayed readings on an LCD for early
+                        identification of abnormal conditions.
+                    </p>
+
+                </div>
+
+                <div class="project-visual visual-three">
+
+                    <div class="sensor-card">
+
+                        <div class="sensor-top">
+                            TOWER MONITORING <span>●</span>
+                        </div>
+
+                        <div class="sensor-reading">
+                            <small>TEMPERATURE</small>
+                            <b>DHT11</b>
+                        </div>
+
+                        <div class="sensor-reading">
+                            <small>VIBRATION</small>
+                            <b>SW-420</b>
+                        </div>
+
+                        <div class="sensor-reading">
+                            <small>CONTROLLER</small>
+                            <b>ESP8266</b>
+                        </div>
+
+                        <div class="sensor-foot">
+                            IOT · EDGE MONITORING
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="project-footer">
+                <div class="tool-pills">
+                    <span>IoT</span>
+                    <span>NodeMCU ESP8266</span>
+                    <span>DHT11</span>
+                    <span>SW-420</span>
+                    <span>LCD</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CERTIFICATIONS AND EDUCATION -->
+<section id="credentials">
+
+    <div class="container">
+
+        <div class="two-col">
+
+            <div>
+
+                <div class="eyebrow">06 / CERTIFICATIONS</div>
+
+                <h2 class="sec-h">
+                    Building my<br>
+                    <span class="accent">technical foundation.</span>
+                </h2>
+
+                <div class="cert-list">
+
+                    <div class="cert-row">
+                        <h4>Internet of Things (IoT) Fundamentals</h4>
+                        <p>Certification · October 2025</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <div class="eyebrow">EDUCATION</div>
+
+                <h2 class="sec-h">The foundation.</h2>
+
+                <div class="edu-list">
+
+                    <div class="edu-row2">
+
+                        <h4>B.Tech — Artificial Intelligence & Data Science</h4>
+
+                        <p>
+                            Mahendra Engineering College, Namakkal · 2023–2027
+                        </p>
+
+                        <div class="score">CGPA: 8.58</div>
+
+                    </div>
+
+                    <div class="edu-row2">
+
+                        <h4>Higher Secondary Certificate</h4>
+
+                        <p>
+                            SRV Girls Higher Secondary School, Rasipuram · 2022–2023
+                        </p>
+
+                        <div class="score">Percentage: 75%</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ACTIVITIES -->
+<section id="Events" class="section-alt">
+
+    <div class="container">
+
+        <div class="eyebrow">07 / ACTIVITIES</div>
+
+        <h2 class="sec-h">
+            Hackathons &<br>
+            <span class="accent">technical activities.</span>
+        </h2>
+
+        <p class="sec-lead">
+            Participating in collaborative technical events to practise
+            teamwork, problem-solving and innovation.
+        </p>
+
+        <div class="meetup-grid">
+
+            <div class="meetup-card">
+
+                <div class="meetup-visual">
+                    ⚡ <span>VELSATHON’26</span>
+                </div>
+
+                <div class="meetup-content">
+
+                    <div class="dt">
+                        OCTOBER 2026 · VELS TECHNOLOGIES
+                    </div>
+
+                    <h3>VELSATHON’26</h3>
+
+                    <p>
+                        Participated in VELSATHON’26, collaborating with
+                        team members to develop ideas and solve
+                        technical problems.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="meetup-card">
+
+                <div class="meetup-visual">
+                    🚀 <span>24-HOUR HACKATHON</span>
+                </div>
+
+                <div class="meetup-content">
+
+                    <div class="dt">
+                        FEBRUARY 2026 · JANSON INSTITUTE OF TECHNOLOGY
+                    </div>
+
+                    <h3>Brilliant Bharath Hackathon</h3>
+
+                    <p>
+                        Participated in the 24-hour Brilliant Bharath
+                        Hackathon, gaining hands-on experience in
+                        teamwork, problem-solving and innovation.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="connect">
+
+    <div class="container connect-grid">
+
         <div>
-          <div class="eyebrow">Connect</div>
-          <h2 class="sec-h">Let's talk data.</h2>
-          <p class="sec-lead">
-            Open to Data Analyst roles across Bengaluru &amp; remote — immediate
-            joiner.
-          </p>
-          <div class="reveal">
-            <a class="connect-item" href="mailto:kavinsrinivasan24@gmail.com"
-              ><span
-                >Email<span class="plat"
-                  >kavinsrinivasan24@gmail.com</span
-                ></span
-              ><span>↗</span></a
-            >
-            <a class="connect-item" href="tel:+919080088177"
-              ><span>Phone<span class="plat">+91 90800 88177</span></span
-              ><span>↗</span></a
-            >
-            <a
-              class="connect-item"
-              href="https://github.com/kavinsrinivasan12"
-              target="_blank"
-              rel="noopener"
-              ><span>GitHub<span class="plat">kavinsrinivasan12</span></span
-              ><span>↗</span></a
-            >
-            <a
-              class="connect-item"
-              href="https://linkedin.com/in/kavinsrinivasan12"
-              target="_blank"
-              rel="noopener"
-              ><span>LinkedIn<span class="plat">kavinsrinivasan12</span></span
-              ><span>↗</span></a
-            >
-    
-    
-          </div>
-        </div>
-        <div class="contact-form reveal">
-          <h4>Send me a message</h4>
-          <p class="note">
-            Recruiters — drop a note directly. Submitting opens your email app
-            pre-filled and addressed to me.
-          </p>
-          <form id="contactForm">
-            <div class="f-group">
-              <label>Name</label><input type="text" id="cf-name" required />
-            </div>
-            <div class="f-group">
-              <label>Your Email</label
-              ><input type="email" id="cf-email" required />
-            </div>
-            <div class="f-group">
-              <label>Message</label
-              ><textarea
-                id="cf-msg"
-                required
-                placeholder="Hi Kavin, we have a Data Analyst opening..."
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              class="btn btn-fill"
-              style="width: 100%; justify-content: center"
-            >
-              Send Message ↗
-            </button>
-            <div class="form-status" id="formStatus"></div>
-          </form>
-        </div>
-      </div>
-    </section>
 
-    <footer>
-      <div class="container">
-        <span>© 2026 Kavin Srinivasan.</span>
-        <span>Bengaluru, India</span>
-      </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+            <div class="eyebrow">08 / CONNECT</div>
+
+            <h2 class="sec-h">
+                Let's build<br>
+                <span class="accent">something useful.</span>
+            </h2>
+
+            <p class="sec-lead">
+                Interested in Full Stack Developer opportunities,
+                collaboration and learning experiences.
+            </p>
+
+            <div class="reveal">
+
+                <a class="connect-item" href="mailto:rohinimec8@gmail.com">
+                    <span>
+                        Email
+                        <span class="plat">rohinimec8@gmail.com</span>
+                    </span>
+                    <span>↗️</span>
+                </a>
+
+                <a class="connect-item" href="tel:+918807702749">
+                    <span>
+                        Phone
+                        <span class="plat">+91 88077 02749</span>
+                    </span>
+                    <span>↗️</span>
+                </a>
+
+                <a class="connect-item" href="https://github.com/rohi-mx1" target="_blank">
+                    <span>
+                        GitHub
+                        <span class="plat">rohi-mx1</span>
+                    </span>
+                    <span>↗️</span>
+                </a>
+
+                <a class="connect-item" href="https://linkedin.com/in/rohini082005" target="_blank">
+                    <span>
+                        LinkedIn
+                        <span class="plat">rohini082005</span>
+                    </span>
+                    <span>↗️</span>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTACT FORM -->
+        <div class="contact-form reveal">
+
+            <h4>Send me a message</h4>
+
+            <p class="note">
+                Submitting opens your email app with the message prepared.
+            </p>
+
+            <form id="contactForm">
+
+                <div class="f-group">
+                    <label for="cf-name">Name</label>
+                    <input type="text" id="cf-name" required>
+                </div>
+
+                <div class="f-group">
+                    <label for="cf-email">Your Email</label>
+                    <input type="email" id="cf-email" required>
+                </div>
+
+                <div class="f-group">
+                    <label for="cf-msg">Message</label>
+                    <textarea id="cf-msg" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-fill">
+                    Send Message ↗️
+                </button>
+
+                <div class="form-status" id="formStatus"></div>
+
+            </form>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="container footer-inner">
+        <span>©️ 2026 Rohini S.</span>
+        <span>Tamil Nadu, India</span>
+    </div>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
 </html>

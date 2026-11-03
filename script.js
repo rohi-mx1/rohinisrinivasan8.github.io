@@ -1,300 +1,160 @@
-/* Scroll reveal */
-const revealEls = document.querySelectorAll(".reveal, .j-item");
-const revealObs = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((e) => {
-      if (e.isIntersecting) {
-        e.target.classList.add("in");
-        revealObs.unobserve(e.target);
-      }
-    });
-  },
-  { threshold: 0.15 },
-);
-revealEls.forEach((el) => revealObs.observe(el));
+// NAVBAR SCROLL EFFECT
 
-/* Nav border on scroll */
+const nav = document.getElementById("nav");
+
 window.addEventListener("scroll", () => {
-  document
-    .getElementById("nav")
-    .classList.toggle("on-scroll", window.scrollY > 30);
+    nav.classList.toggle("scrolled", window.scrollY > 20);
 });
 
-/* Kinetic letter-by-letter name */
-(function () {
-  const kn = document.getElementById("kineticName");
-  if (!kn) return;
-  const text = kn.textContent;
-  kn.textContent = "";
-  [...text].forEach((ch, i) => {
-    const s = document.createElement("span");
-    s.className = "ch";
-    s.style.animationDelay = 0.15 + i * 0.045 + "s";
-    s.textContent = ch === " " ? "\u00A0" : ch;
-    kn.appendChild(s);
-  });
-})();
 
-/* Floating photo parallax */
-(function () {
-  const photo = document.getElementById("heroPhotoFloat");
-  const hero = document.getElementById("heroSection");
-  if (!photo || !hero) return;
-  hero.addEventListener("mousemove", (e) => {
-    const rect = hero.getBoundingClientRect();
-    const mx = ((e.clientX - rect.left) / rect.width - 0.5) * 2;
-    const my = ((e.clientY - rect.top) / rect.height - 0.5) * 2;
-    photo.style.transform = `translate(${mx * -10}px, ${my * -14}px)`;
-  });
-})();
+// MOBILE MENU
 
-/* Init JS with your Public Key */
-emailjs.init("e0JjiWeUGQ_WnpIUa");
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
 
-/* Contact form -> sends directly to your inbox via EmailJS */
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault();
-  const name = document.getElementById("cf-name").value;
-  const email = document.getElementById("cf-email").value;
-  const msg = document.getElementById("cf-msg").value;
-  const statusEl = document.getElementById("formStatus");
-
-  statusEl.textContent = "Sending…";
-
-  emailjs
-    .send("service_6hc5ju3", "template_brs3cvm", {
-      name: name,
-      email: email,
-      message: msg,
-    })
-    .then(
-      function () {
-        statusEl.textContent = "Message sent — thank you!";
-        document.getElementById("contactForm").reset();
-      },
-      function (error) {
-        statusEl.textContent =
-          "Something went wrong. Please try emailing directly.";
-        console.error("EmailJS error:", error);
-      },
-    );
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
 });
 
-/* ---------- HERO: 3D NETWORK SPHERE ---------- */
-(function () {
-  const canvas = document.getElementById("net-canvas");
-  const heroSection = document.getElementById("heroSection");
-  const renderer = new THREE.WebGLRenderer({
-    canvas,
-    antialias: true,
-    alpha: true,
-  });
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-  const scene = new THREE.Scene();
-  const camera = new THREE.PerspectiveCamera(50, 1, 0.1, 100);
-  camera.position.set(0, 0, 9);
+navLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+    });
+});
 
-  scene.add(new THREE.AmbientLight(0x3a2a1a, 1.3));
-  const key = new THREE.DirectionalLight(0xffffff, 1.0);
-  key.position.set(6, 8, 6);
-  scene.add(key);
-  const rim = new THREE.PointLight(0xffa63d, 2.4, 30);
-  rim.position.set(-5, 3, 4);
-  scene.add(rim);
-  const fillLight = new THREE.PointLight(0xff5f45, 0.9, 30);
-  fillLight.position.set(4, -3, -3);
-  scene.add(fillLight);
 
-  // Icosahedron wireframe "data sphere"
-  const mainGroup = new THREE.Group();
-  const icoGeo = new THREE.IcosahedronGeometry(2.6, 1);
-  const icoMat = new THREE.MeshStandardMaterial({
-    color: 0xffa63d,
-    wireframe: true,
-    transparent: true,
-    opacity: 0.5,
-    emissive: 0xff7a45,
-    emissiveIntensity: 0.25,
-  });
-  const ico = new THREE.Mesh(icoGeo, icoMat);
-  mainGroup.add(ico);
+// SCROLL ANIMATION
 
-  // Node points at vertices with glow spheres
-  const posAttr = icoGeo.attributes.position;
-  const nodeCount = posAttr.count;
-  const nodes = [];
-  for (let i = 0; i < nodeCount; i += 3) {
-    const v = new THREE.Vector3(
-      posAttr.getX(i),
-      posAttr.getY(i),
-      posAttr.getZ(i),
+const observer = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            entry.target.classList.add("visible");
+
+            observer.unobserve(entry.target);
+
+        }
+
+    });
+
+}, {
+    threshold: 0.12
+});
+
+document.querySelectorAll(".reveal").forEach(element => {
+    observer.observe(element);
+});
+
+
+// CONTACT FORM
+
+document.getElementById("contactForm").addEventListener("submit", event => {
+
+    event.preventDefault();
+
+    const name = document.getElementById("cf-name").value.trim();
+    const email = document.getElementById("cf-email").value.trim();
+    const message = document.getElementById("cf-msg").value.trim();
+
+    const subject = encodeURIComponent("Portfolio enquiry from " + name);
+
+    const body = encodeURIComponent(
+        "Name: " + name +
+        "\nEmail: " + email +
+        "\n\n" + message
     );
-    const sMat = new THREE.MeshStandardMaterial({
-      color: 0xffffff,
-      emissive: 0xffa63d,
-      emissiveIntensity: 1,
-      metalness: 0.3,
-      roughness: 0.2,
-    });
-    const s = new THREE.Mesh(new THREE.SphereGeometry(0.045, 10, 10), sMat);
-    s.position.copy(v);
-    mainGroup.add(s);
-    nodes.push(s);
-  }
 
-  // Orbiting particles around the sphere
-  const orbitGroup = new THREE.Group();
-  const orbitCount = 40;
-  const orbitGeo = new THREE.SphereGeometry(0.03, 6, 6);
-  for (let i = 0; i < orbitCount; i++) {
-    const angle = Math.random() * Math.PI * 2;
-    const radius = 3.4 + Math.random() * 1.6;
-    const y = (Math.random() - 0.5) * 3.5;
-    const mat = new THREE.MeshBasicMaterial({
-      color: Math.random() > 0.5 ? 0xffa63d : 0xff7a45,
-      transparent: true,
-      opacity: 0.7,
-    });
-    const p = new THREE.Mesh(orbitGeo, mat);
-    p.position.set(Math.cos(angle) * radius, y, Math.sin(angle) * radius);
-    p.userData.angle = angle;
-    p.userData.radius = radius;
-    p.userData.speed = 0.1 + Math.random() * 0.2;
-    p.userData.y = y;
-    orbitGroup.add(p);
-  }
-  mainGroup.add(orbitGroup);
-  scene.add(mainGroup);
+    document.getElementById("formStatus").textContent =
+        "Opening your email application...";
 
-  function resize() {
-    const w = heroSection.clientWidth,
-      h = heroSection.clientHeight;
-    renderer.setSize(w, h, false);
-    camera.aspect = w / h;
-    camera.updateProjectionMatrix();
-  }
-  resize();
-  window.addEventListener("resize", resize);
+    window.location.href =
+        `mailto:rohinimec8@gmail.com?subject=${subject}&body=${body}`;
 
-  let mouseX = 0,
-    mouseY = 0,
-    targetRotX = 0,
-    targetRotY = 0;
-  heroSection.addEventListener("mousemove", (e) => {
-    const rect = heroSection.getBoundingClientRect();
-    mouseX = ((e.clientX - rect.left) / rect.width - 0.5) * 2;
-    mouseY = ((e.clientY - rect.top) / rect.height - 0.5) * 2;
-  });
-
-  let scrollProgress = 0;
-  function updateScroll() {
-    const rect = heroSection.getBoundingClientRect();
-    const p =
-      1 -
-      Math.min(
-        Math.max(rect.bottom / (rect.height + window.innerHeight), 0),
-        1,
-      );
-    scrollProgress = Math.min(Math.max(p, 0), 1);
-  }
-  window.addEventListener("scroll", updateScroll);
-  updateScroll();
-
-  const clock = new THREE.Clock();
-  function animate() {
-    requestAnimationFrame(animate);
-    const t = clock.getElapsedTime();
-
-    mainGroup.rotation.y = t * 0.12;
-    mainGroup.rotation.x = Math.sin(t * 0.2) * 0.08;
-
-    targetRotX += (-mouseY * 0.25 - targetRotX) * 0.05;
-    targetRotY += (mouseX * 0.4 - targetRotY) * 0.05;
-    mainGroup.rotation.x += targetRotX * 0.3;
-    mainGroup.rotation.y += targetRotY * 0.3;
-
-    orbitGroup.children.forEach((p) => {
-      const a = p.userData.angle + t * p.userData.speed;
-      p.position.set(
-        Math.cos(a) * p.userData.radius,
-        p.userData.y + Math.sin(t + p.userData.angle) * 0.2,
-        Math.sin(a) * p.userData.radius,
-      );
-    });
-
-    // scroll dolly zoom
-    camera.position.z = 9 - scrollProgress * 3.2;
-    camera.position.y = scrollProgress * 1.2;
-    camera.lookAt(0, 0, 0);
-
-    renderer.render(scene, camera);
-  }
-  animate();
-})();
+});
 
 
-function initDashboard3D(containerId) {
-  const container = document.getElementById(containerId);
+// ANIMATED BACKGROUND
 
-  if (!container) return;
+const canvas = document.getElementById("net-canvas");
+const ctx = canvas.getContext("2d");
 
-  let isDragging = false;
-  let startX = 0;
-  let startY = 0;
+let points = [];
 
-  let rotateX = -8;
-  let rotateY = -20;
+function resizeCanvas() {
 
-  function updateRotation() {
-    container.style.setProperty("--rotateX", `${rotateX}deg`);
-    container.style.setProperty("--rotateY", `${rotateY}deg`);
-  }
+    const rect = canvas.getBoundingClientRect();
 
-  // Automatic slow rotation
-  function autoRotate() {
-    if (!isDragging) {
-      rotateY += 0.03; // smaller = slower
-      updateRotation();
-    }
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
 
-    requestAnimationFrame(autoRotate);
-  }
+    canvas.width = rect.width * dpr;
+    canvas.height = rect.height * dpr;
 
-  container.addEventListener("mousedown", (e) => {
-    isDragging = true;
-    startX = e.clientX;
-    startY = e.clientY;
-    container.classList.add("dragging");
-  });
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
-  window.addEventListener("mousemove", (e) => {
-    if (!isDragging) return;
-
-    const deltaX = e.clientX - startX;
-    const deltaY = e.clientY - startY;
-
-    rotateY += deltaX * 0.4;
-    rotateX -= deltaY * 0.25;
-
-    rotateX = Math.max(-35, Math.min(35, rotateX));
-
-    updateRotation();
-
-    startX = e.clientX;
-    startY = e.clientY;
-  });
-
-  window.addEventListener("mouseup", () => {
-    isDragging = false;
-    container.classList.remove("dragging");
-  });
-
-  updateRotation();
-  autoRotate();
+    points = Array.from(
+        { length: Math.floor(rect.width / 22) },
+        () => ({
+            x: Math.random() * rect.width,
+            y: Math.random() * rect.height,
+            vx: (Math.random() - 0.5) * 0.25,
+            vy: (Math.random() - 0.5) * 0.25
+        })
+    );
 }
 
- 
-initDashboard3D("p1-3d");
-initDashboard3D("p2-3d");
-initDashboard3D("p3-3d");
+function drawNetwork() {
 
+    const width = canvas.clientWidth;
+    const height = canvas.clientHeight;
+
+    ctx.clearRect(0, 0, width, height);
+
+    points.forEach((p, i) => {
+
+        p.x += p.vx;
+        p.y += p.vy;
+
+        if (p.x < 0 || p.x > width) p.vx *= -1;
+        if (p.y < 0 || p.y > height) p.vy *= -1;
+
+        for (let j = i + 1; j < points.length; j++) {
+
+            const q = points[j];
+
+            const distance = Math.hypot(
+                p.x - q.x,
+                p.y - q.y
+            );
+
+            if (distance < 105) {
+
+                ctx.strokeStyle =
+                    `rgba(101,214,208,${(1 - distance / 105) * 0.17})`;
+
+                ctx.beginPath();
+                ctx.moveTo(p.x, p.y);
+                ctx.lineTo(q.x, q.y);
+                ctx.stroke();
+
+            }
+
+        }
+
+        ctx.fillStyle = "rgba(244,185,66,.35)";
+
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, 1.3, 0, Math.PI * 2);
+        ctx.fill();
+
+    });
+
+    requestAnimationFrame(drawNetwork);
+}
+
+resizeCanvas();
+
+window.addEventListener("resize", resizeCanvas);
+
+drawNetwork();
