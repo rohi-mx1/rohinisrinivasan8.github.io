@@ -2100,3 +2100,89 @@ button:focus-visible {
         padding: 25px 0;
     }
 }
+
+/* =========================================
+   INTERNSHIP PROJECT DASHBOARD
+========================================= */
+
+.internship-project {
+    margin-top: 38px;
+    padding-top: 27px;
+    border-top: 1px solid rgba(232,189,105,.18);
+}
+
+.internship-project-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.project-label {
+    color: var(--cyan);
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.internship-project-heading h3 {
+    font-size: 19px;
+    margin: 9px 0;
+}
+
+.internship-project-heading p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.dashboard-icon {
+    color: var(--accent);
+    font-size: 25px;
+}
+
+.internship-dashboard-image {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid rgba(232,189,105,.2);
+    border-radius: 9px;
+    background: #0b111a;
+}
+
+.internship-dashboard-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform .5s ease;
+}
+
+.internship-dashboard-image:hover img {
+    transform: scale(1.025);
+}
+
+.internship-dashboard-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 17px;
+}
+
+.dashboard-caption {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    color: var(--cyan);
+}
+
+@media(max-width:520px) {
+    .internship-project-heading h3 {
+        font-size: 16px;
+    }
+
+    .internship-dashboard-footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
