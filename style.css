@@ -880,3 +880,48 @@ footer {
         flex-direction: column;
     }
 }
+.project-preview {
+    width: 100%;
+    max-width: 655px;
+    height: 270px;
+    position: relative;
+    overflow: hidden;
+    perspective: 1000px;
+    background: #090909;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rotate-image {
+    width: 78%;
+    height: 100%;
+    cursor: grab;
+    transform-style: preserve-3d;
+    transform: rotateY(-12deg);
+    transition: transform 0.15s ease;
+}
+
+.rotate-image:active {
+    cursor: grabbing;
+}
+
+.rotate-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    user-select: none;
+    pointer-events: none;
+}
+
+.rotate-hint {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #ffa32b;
+    font-size: 11px;
+    letter-spacing: 1px;
+}.rotate-image {
+    touch-action: pan-y;
+    user-select: none;
+}

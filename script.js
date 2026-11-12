@@ -158,3 +158,36 @@ resizeCanvas();
 window.addEventListener("resize", resizeCanvas);
 
 drawNetwork();
+
+document.querySelectorAll(".rotate-image").forEach((image) => {
+
+    let isDragging = false;
+    let startX = 0;
+    let rotation = -12;
+
+    image.addEventListener("pointerdown", (e) => {
+        isDragging = true;
+        startX = e.clientX;
+        image.setPointerCapture(e.pointerId);
+    });
+
+    image.addEventListener("pointermove", (e) => {
+        if (!isDragging) return;
+
+        const difference = e.clientX - startX;
+
+        rotation += difference * 0.5;
+        startX = e.clientX;
+
+        image.style.transform = `rotateY(${rotation}deg)`;
+    });
+
+    image.addEventListener("pointerup", () => {
+        isDragging = false;
+    });
+
+    image.addEventListener("pointercancel", () => {
+        isDragging = false;
+    });
+
+});
