@@ -1775,40 +1775,48 @@ section:nth-of-type(even) {
     color: var(--muted);
 }
 
-/* SKILLS */
 
+/* SKILL MARQUEE */
 .skill-marquee {
     background: rgba(232,189,105,.025);
     border-color: rgba(232,189,105,.12);
-    padding: 20px 0;
+    padding: 24px 0;
 }
 
 .marquee-track span {
     color: #d9b56f;
-    letter-spacing: 2.5px;
+    letter-spacing: 3px;
+    font-size: 16px;
+    font-weight: 700;
 }
 
+/* SKILL TABLE */
 .skill-table {
     border-top-color: rgba(232,189,105,.18);
 }
 
+/* SKILL ROWS */
 .skill-row {
-    padding: 25px 5px;
+    padding: 30px 5px;
     border-bottom-color: rgba(255,255,255,.07);
 }
 
+/* CATEGORY LABELS */
 .label {
-    font-size: 13px;
-    letter-spacing: .4px;
+    font-size: 19px;
+    letter-spacing: .5px;
+    font-weight: 700;
 }
 
+/* SKILL PILLS */
 .vals span,
 .tool-pills span {
-    padding: 8px 13px;
+    padding: 11px 17px;
     border-radius: 30px;
     background: #172333;
-    border-color: rgba(255,255,255,.06);
-    font-size: 11px;
+    border-color: rgba(255,255,255,.08);
+    font-size: 14px;
+    font-weight: 500;
 }
 
 /* EXPERIENCE */
