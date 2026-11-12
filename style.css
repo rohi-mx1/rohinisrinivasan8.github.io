@@ -2186,3 +2186,48 @@ button:focus-visible {
         flex-direction: column;
     }
 }
+
+/* INTERNSHIP SECTION - MATCH PROJECT SECTION ALIGNMENT */
+
+#experience .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#experience .exp-block {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+}
+
+#experience .internship-project {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+}
+
+#experience .internship-dashboard-image {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#experience .internship-dashboard-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    #experience .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
