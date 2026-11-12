@@ -1,11 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rohini S | Full Stack Developer</title>
+
+    <meta name="description" content="Rohini S - B.Tech Artificial Intelligence and Data Science student interested in Full Stack Development, Machine Learning and IoT.">
+
+    <meta name="author" content="Rohini S">
+
+    <title>Rohini S | AI & Data Science Student</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
@@ -17,19 +25,33 @@
 <nav id="nav">
     <div class="container nav-inner">
 
-        <a href="#heroSection" class="nav-mark">RS<span>.</span></a>
+        <a href="#heroSection" class="nav-mark" aria-label="Home">
+            RS<span>.</span>
+        </a>
 
-        <button class="menu-toggle" id="menuToggle">☰</button>
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="navLinks">
+            ☰
+        </button>
 
         <div class="nav-links" id="navLinks">
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
-            <a href="#Events">Activities</a>
-            <a href="#connect">Connect</a>
+            <a href="#credentials">Education</a>
+            <a href="#events">Activities</a>
+            <a href="#connect">Contact</a>
         </div>
 
-        <a href="sources/Rohini_resume.pdf" download class="nav-cta">
+        <a href="assets/Rohini (1).pdf"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="nav-cta">
             Resume ↓
         </a>
 
@@ -40,7 +62,7 @@
 <!-- HERO SECTION -->
 <section class="hero" id="heroSection">
 
-    <canvas id="net-canvas"></canvas>
+    <canvas id="net-canvas" aria-hidden="true"></canvas>
     <div class="hero-vignette"></div>
 
     <div class="container hero-content">
@@ -49,7 +71,7 @@
 
             <div class="hero-eyebrow">
                 <span class="dot"></span>
-               FULL STACK DEVELOPER · TAMIL NADU, INDIA
+                AI & DATA SCIENCE STUDENT · TAMIL NADU, INDIA
             </div>
 
             <p class="name-kicker">Hello, I'm</p>
@@ -65,20 +87,30 @@
 
             <p class="hero-sub">
                 B.Tech Artificial Intelligence and Data Science student
-                graduating in 2027, skilled in Java, Flask, HTML, CSS,
-                JavaScript, React and MySQL. Interested in developing
-                responsive web applications, REST APIs and user-friendly
-                software solutions.
+                graduating in 2027. I have foundational knowledge of
+                Java, Python, SQL and web technologies, with hands-on
+                experience building projects in web development,
+                machine learning and IoT. Passionate about learning
+                and developing practical software solutions.
             </p>
 
             <div class="hero-cta">
-                <a href="#projects" class="btn btn-fill">View Projects ↘️</a>
-                <a href="sources/Rohini_resume.pdf" download class="btn btn-ghost">
-                    Download Resume ↓
+
+                <a href="#projects" class="btn btn-fill">
+                    View Projects ↘
                 </a>
+
+                <a href="assets/Rohini (1).pdf"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn btn-ghost">
+                    View Resume ↓
+                </a>
+
             </div>
 
         </div>
+
 
         <div class="hero-side">
 
@@ -98,7 +130,7 @@
     </div>
 
     <div class="hero-hint">
-        SCROLL — explore my developer journey
+        SCROLL — EXPLORE MY DEVELOPER JOURNEY
     </div>
 
 </section>
@@ -106,6 +138,7 @@
 
 <!-- STATISTICS -->
 <div class="stat-strip">
+
     <div class="container stats">
 
         <div class="cell">
@@ -115,7 +148,7 @@
 
         <div class="cell">
             <strong>3</strong>
-            <span>Projects</span>
+            <span>Featured Projects</span>
         </div>
 
         <div class="cell">
@@ -129,6 +162,7 @@
         </div>
 
     </div>
+
 </div>
 
 
@@ -141,15 +175,16 @@
 
         <h2 class="sec-h">
             From AI & Data Science<br>
-            <span class="accent">to full stack development.</span>
+            <span class="accent">to software development.</span>
         </h2>
 
         <p class="sec-lead">
-            I am a B.Tech Artificial Intelligence and Data Science student
-            with an interest in building responsive applications and
-            practical software solutions. I enjoy problem-solving,
+            I am a B.Tech Artificial Intelligence and Data Science
+            student with an interest in building responsive applications
+            and practical software solutions. I enjoy problem-solving,
             learning new technologies and working collaboratively.
         </p>
+
 
         <div class="about-grid">
 
@@ -161,16 +196,18 @@
                 </div>
 
                 <div class="pivot-chip">
-                    AI & Data Science →  Full Stack Development
+                    AI & Data Science → Software Development
                 </div>
 
                 <p>
-                    My projects have given me exposure to web application
-                    development, REST APIs, machine learning and
-                    IoT-based monitoring systems.
+                    My academic and personal projects have given me
+                    exposure to web application development, REST APIs,
+                    machine learning and IoT-based monitoring systems.
+                    I continuously work on improving my technical skills.
                 </p>
 
             </div>
+
 
             <div class="fact-list reveal">
 
@@ -200,14 +237,16 @@
                 </div>
 
                 <div class="fact-row">
-                    <span>Career Focus</span>
-                    <b> Full Stack Development</b>
+                    <span>Career Interest</span>
+                    <b>Software Development</b>
                 </div>
 
             </div>
 
         </div>
+
     </div>
+
 </section>
 
 
@@ -224,9 +263,10 @@
         </h2>
 
         <p class="sec-lead">
-            A simple development workflow that connects the user interface,
-            application logic and data.
+            A simple development workflow that connects the user
+            interface, application logic and data.
         </p>
+
 
         <div class="process-row reveal">
 
@@ -234,39 +274,41 @@
                 <div class="p-num">01</div>
                 <div class="p-icon">💡</div>
                 <h4>Understand</h4>
-                <p>Identify the problem and requirements</p>
+                <p>Identify the problem and requirements.</p>
             </div>
 
             <div class="p-step">
                 <div class="p-num">02</div>
                 <div class="p-icon">🎨</div>
                 <h4>Design</h4>
-                <p>Plan the interface and user flow</p>
+                <p>Plan the interface and user flow.</p>
             </div>
 
             <div class="p-step">
                 <div class="p-num">03</div>
                 <div class="p-icon">⌨️</div>
                 <h4>Develop</h4>
-                <p>Build with front-end and back-end tools</p>
+                <p>Build using suitable development tools.</p>
             </div>
 
             <div class="p-step">
                 <div class="p-num">04</div>
                 <div class="p-icon">🧪</div>
                 <h4>Test</h4>
-                <p>Test, debug and improve features</p>
+                <p>Test, debug and improve features.</p>
             </div>
 
             <div class="p-step">
                 <div class="p-num">05</div>
                 <div class="p-icon">🚀</div>
                 <h4>Deliver</h4>
-                <p>Prepare the application for use</p>
+                <p>Prepare the application for use.</p>
             </div>
 
         </div>
+
     </div>
+
 </section>
 
 
@@ -277,15 +319,20 @@
 
         <div class="eyebrow">03 / SKILLS</div>
 
-        <h2 class="sec-h">My developer toolkit.</h2>
+        <h2 class="sec-h">
+            My developer toolkit.
+        </h2>
 
     </div>
 
-    <div class="skill-marquee">
+
+    <div class="skill-marquee" aria-label="Technologies">
+
         <div class="marquee-track">
+
             <span>PYTHON</span>
-            <span>JAVASCRIPT</span>
             <span>JAVA</span>
+            <span>JAVASCRIPT</span>
             <span>SQL</span>
             <span>HTML</span>
             <span>CSS</span>
@@ -296,8 +343,8 @@
             <span>VS CODE</span>
 
             <span>PYTHON</span>
-            <span>JAVASCRIPT</span>
             <span>JAVA</span>
+            <span>JAVASCRIPT</span>
             <span>SQL</span>
             <span>HTML</span>
             <span>CSS</span>
@@ -306,8 +353,11 @@
             <span>MYSQL</span>
             <span>GITHUB</span>
             <span>VS CODE</span>
+
         </div>
+
     </div>
+
 
     <div class="container">
 
@@ -316,9 +366,9 @@
             <div class="skill-row">
                 <div class="label">Programming Languages</div>
                 <div class="vals">
+                    <span>Java</span>
                     <span>Python</span>
                     <span>JavaScript</span>
-                    <span>Java</span>
                     <span>SQL</span>
                 </div>
             </div>
@@ -329,14 +379,14 @@
                     <span>HTML</span>
                     <span>CSS</span>
                     <span>React</span>
-                    <span>Responsive Web Design</span>
+                    <span>Responsive Design</span>
                 </div>
             </div>
 
             <div class="skill-row">
                 <div class="label">Back-End Development</div>
                 <div class="vals">
-                    <span>Flask</span>
+                    <span>Python Flask</span>
                     <span>REST APIs</span>
                 </div>
             </div>
@@ -354,8 +404,7 @@
                 <div class="vals">
                     <span>GitHub</span>
                     <span>VS Code</span>
-                    <span>Antigravity</span>
-                    <span>claude</span>
+                    <span>Jupyter Notebook</span>
                 </div>
             </div>
 
@@ -369,7 +418,9 @@
             </div>
 
         </div>
+
     </div>
+
 </section>
 
 
@@ -385,6 +436,7 @@
             <span class="accent">hands-on experience.</span>
         </h2>
 
+
         <div class="exp-block reveal">
 
             <div class="exp-top">
@@ -398,22 +450,25 @@
 
             </div>
 
+
             <ul class="exp-list">
+
                 <li>
-                    Worked with real-world datasets to identify patterns
-                    and gain practical exposure to data analysis and
-                    problem-solving.
+                    Gained practical exposure to working with datasets,
+                    identifying patterns and understanding data analysis.
                 </li>
 
                 <li>
-                    Applied machine learning techniques to datasets,
-                    gaining hands-on experience in developing
-                    data-driven solutions.
+                    Explored machine learning techniques and applied
+                    data-driven approaches to practical tasks.
                 </li>
+
             </ul>
 
         </div>
+
     </div>
+
 </section>
 
 
@@ -430,7 +485,7 @@
         </h2>
 
         <p class="sec-lead">
-            Academic and practical projects across full stack development,
+            Academic and practical projects across software development,
             machine learning and IoT.
         </p>
 
@@ -439,11 +494,15 @@
         <div class="project-card reveal">
 
             <div class="project-head">
-                <h3>Distraction Reminder</h3>
+
+                <h3>Smart Distraction Reminder</h3>
+
                 <div class="dt">
-                    July 2025 · Python · Flask · JavaScript · MySQL · NLP
+                    July 2025 · Python · Flask · JavaScript
                 </div>
+
             </div>
+
 
             <div class="media-row">
 
@@ -451,56 +510,69 @@
 
                     <p>
                         <strong>Problem:</strong>
-                        User distractions can interrupt focus and make it
-                        difficult to stay on a task.
+                        Online distractions can interrupt study sessions
+                        and reduce productivity.
                     </p>
 
                     <p>
                         <strong>Solution:</strong>
-                        Built a responsive web application using Flask,
-                        HTML, CSS and JavaScript that detects user
-                        distractions and delivers timely reminders.
+                        Developed a Chrome extension that identifies
+                        distracting websites and displays timely reminders
+                        to encourage focused browsing.
                     </p>
 
                     <p>
                         <strong>Implementation:</strong>
-                        Stored user activity data in MySQL and developed
-                        Flask REST API endpoints.
+                        Integrated a Flask backend for content analysis
+                        and JavaScript for browser interaction.
                     </p>
 
-                </div><div class="project-preview">
-    <div class="rotate-image" id="rotateImage">
-        <img src="images/youtube.jpeg
-        " alt="Project Preview">
-    </div>
-    <span class="rotate-hint">DRAG TO ROTATE</span>
-</div>
-                
-                
+                </div>
 
+
+                <div class="project-preview">
+
+                    <div class="rotate-image">
+                        <img
+                            src="images/youtube.jpeg"
+                            alt="Smart Distraction Reminder project "
+                            loading="lazy"
+                            draggable="false">
+                    </div>
+
+                </div>
 
             </div>
 
+
             <div class="project-footer">
+
                 <div class="tool-pills">
                     <span>Python</span>
                     <span>Flask</span>
                     <span>JavaScript</span>
-                    <span>MySQL</span>
-                    <span>NLP</span>
+                    <span>Chrome Extension</span>
                 </div>
+
             </div>
 
         </div>
+
 
 
         <!-- PROJECT 2 -->
         <div class="project-card reveal">
 
             <div class="project-head">
+
                 <h3>Smart Aviation Safety System</h3>
-                <div class="dt">October 2025 · Python · Machine Learning</div>
+
+                <div class="dt">
+                    October 2025 · Python · Machine Learning
+                </div>
+
             </div>
+
 
             <div class="media-row">
 
@@ -521,39 +593,56 @@
 
                     <p>
                         <strong>Purpose:</strong>
-                        Supported risk assessment and safer,
-                        better-informed decision-making.
+                        Supported risk assessment and better-informed
+                        decision-making.
                     </p>
 
                 </div>
+
+
                 <div class="project-preview">
-    <div class="rotate-image">
-        <img src="images/aviation.jpeg" alt="Project 2">
-    </div>
-    <span class="rotate-hint">DRAG TO ROTATE</span>
-</div>
-               
+
+                    <div class="rotate-image">
+                        <img
+                            src="images/aviation.jpeg"
+                            alt="Smart Aviation Safety System project "
+                            loading="lazy"
+                            draggable="false">
+                    </div>
+
+                </div>
 
             </div>
 
+
             <div class="project-footer">
+
                 <div class="tool-pills">
                     <span>Python</span>
                     <span>Machine Learning</span>
                     <span>Aviation Data</span>
                 </div>
+
             </div>
 
         </div>
+
 
 
         <!-- PROJECT 3 -->
         <div class="project-card reveal">
 
             <div class="project-head">
+
                 <h3>IoT and Edge-Based Smart Telecom Tower Monitoring System</h3>
-                <div class="dt">April 2026 · NodeMCU · DHT11 · SW-420</div>
+
+                <div class="dt">
+                    2026 · IoT · Edge Computing · NodeMCU
+                    <span class="project-status">In Progress</span>
+                </div>
+
             </div>
+
 
             <div class="media-row">
 
@@ -561,37 +650,43 @@
 
                     <p>
                         <strong>Problem:</strong>
-                        Telecom tower conditions such as temperature
-                        and vibration need to be monitored.
+                        Telecom tower conditions such as temperature,
+                        vibration and power supply require monitoring.
                     </p>
 
                     <p>
                         <strong>Solution:</strong>
-                        Monitored tower temperature, vibration and
-                        power conditions using NodeMCU (ESP8266) sensors.
+                        Developing a monitoring system using NodeMCU
+                        (ESP8266) and sensors to collect tower condition
+                        readings.
                     </p>
 
                     <p>
                         <strong>Output:</strong>
-                        Displayed readings on an LCD for early
-                        identification of abnormal conditions.
+                        Designed to display readings and identify
+                        abnormal conditions through monitoring and alerts.
                     </p>
 
                 </div>
 
-               <div class="project-preview">
-    <div class="rotate-image">
-        <img src="images/Iot.jpeg" alt="Project 3">
-    </div>
-    <span class="rotate-hint">DRAG TO ROTATE</span>
-</div>
-              
 
-                  
+                <div class="project-preview">
+
+                    <div class="rotate-image">
+                        <img
+                            src="images/Iot.jpeg"
+                            alt="IoT Telecom Tower Monitoring System project "
+                            loading="lazy"
+                            draggable="false">
+                    </div>
+
+                </div>
 
             </div>
 
+
             <div class="project-footer">
+
                 <div class="tool-pills">
                     <span>IoT</span>
                     <span>NodeMCU ESP8266</span>
@@ -599,11 +694,13 @@
                     <span>SW-420</span>
                     <span>LCD</span>
                 </div>
+
             </div>
 
         </div>
 
     </div>
+
 </section>
 
 
@@ -614,6 +711,8 @@
 
         <div class="two-col">
 
+
+            <!-- CERTIFICATIONS -->
             <div>
 
                 <div class="eyebrow">06 / CERTIFICATIONS</div>
@@ -622,6 +721,7 @@
                     Building my<br>
                     <span class="accent">technical foundation.</span>
                 </h2>
+
 
                 <div class="cert-list">
 
@@ -635,35 +735,47 @@
             </div>
 
 
+
+            <!-- EDUCATION -->
             <div>
 
                 <div class="eyebrow">EDUCATION</div>
 
                 <h2 class="sec-h">The foundation.</h2>
 
+
                 <div class="edu-list">
 
                     <div class="edu-row2">
 
-                        <h4>B.Tech — Artificial Intelligence & Data Science</h4>
+                        <h4>
+                            B.Tech — Artificial Intelligence & Data Science
+                        </h4>
 
                         <p>
-                            Mahendra Engineering College, Namakkal · 2023–2027
+                            Mahendra Engineering College,
+                            Namakkal · 2023–2027
                         </p>
 
-                        <div class="score">CGPA: 8.58</div>
+                        <div class="score">
+                            CGPA: 8.58
+                        </div>
 
                     </div>
+
 
                     <div class="edu-row2">
 
                         <h4>Higher Secondary Certificate</h4>
 
                         <p>
-                            SRV Girls Higher Secondary School, Rasipuram · 2022–2023
+                            SRV Girls Higher Secondary School,
+                            Rasipuram · 2022–2023
                         </p>
 
-                        <div class="score">Percentage: 75%</div>
+                        <div class="score">
+                            Percentage: 75%
+                        </div>
 
                     </div>
 
@@ -672,12 +784,14 @@
             </div>
 
         </div>
+
     </div>
+
 </section>
 
 
 <!-- ACTIVITIES -->
-<section id="Events" class="section-alt">
+<section id="events" class="section-alt">
 
     <div class="container">
 
@@ -693,13 +807,16 @@
             teamwork, problem-solving and innovation.
         </p>
 
+
         <div class="meetup-grid">
+
 
             <div class="meetup-card">
 
                 <div class="meetup-visual">
-                    ⚡ <span>VELSATHON’26</span>
+                    ⚡ <span>VELSATHON'26</span>
                 </div>
+
 
                 <div class="meetup-content">
 
@@ -707,11 +824,11 @@
                         OCTOBER 2026 · VELS TECHNOLOGIES
                     </div>
 
-                    <h3>VELSATHON’26</h3>
+                    <h3>VELSATHON'26</h3>
 
                     <p>
-                        Participated in VELSATHON’26, collaborating with
-                        team members to develop ideas and solve
+                        Participated in VELSATHON'26, collaborating
+                        with team members to develop ideas and solve
                         technical problems.
                     </p>
 
@@ -720,11 +837,13 @@
             </div>
 
 
+
             <div class="meetup-card">
 
                 <div class="meetup-visual">
                     🚀 <span>24-HOUR HACKATHON</span>
                 </div>
+
 
                 <div class="meetup-content">
 
@@ -736,8 +855,8 @@
 
                     <p>
                         Participated in the 24-hour Brilliant Bharath
-                        Hackathon, gaining hands-on experience in
-                        teamwork, problem-solving and innovation.
+                        Hackathon, gaining experience in teamwork,
+                        problem-solving and innovation.
                     </p>
 
                 </div>
@@ -747,6 +866,7 @@
         </div>
 
     </div>
+
 </section>
 
 
@@ -755,6 +875,8 @@
 
     <div class="container connect-grid">
 
+
+        <!-- CONTACT DETAILS -->
         <div>
 
             <div class="eyebrow">08 / CONNECT</div>
@@ -765,47 +887,84 @@
             </h2>
 
             <p class="sec-lead">
-                Interested in Full Stack Developer opportunities,
-                collaboration and learning experiences.
+                Interested in software development opportunities,
+                internships, collaboration and learning experiences.
             </p>
+
 
             <div class="reveal">
 
-                <a class="connect-item" href="mailto:rohinimec8@gmail.com">
+
+                <a class="connect-item"
+                   href="mailto:rohinimec8@gmail.com">
+
                     <span>
                         Email
-                        <span class="plat">rohinimec8@gmail.com</span>
+                        <span class="plat">
+                            rohinimec8@gmail.com
+                        </span>
                     </span>
-                    <span>↗️</span>
+
+                    <span>↗</span>
+
                 </a>
 
-                <a class="connect-item" href="tel:+918807702749">
+
+
+                <a class="connect-item"
+                   href="tel:+918807702749">
+
                     <span>
                         Phone
-                        <span class="plat">+91 88077 02749</span>
+                        <span class="plat">
+                            +91 88077 02749
+                        </span>
                     </span>
-                    <span>↗️</span>
+
+                    <span>↗</span>
+
                 </a>
 
-                <a class="connect-item" href="https://github.com/rohi-mx1" target="_blank">
+
+
+                <a class="connect-item"
+                   href="https://github.com/rohi-mx1"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
                     <span>
                         GitHub
-                        <span class="plat">rohi-mx1</span>
+                        <span class="plat">
+                            rohi-mx1
+                        </span>
                     </span>
-                    <span>↗️</span>
+
+                    <span>↗</span>
+
                 </a>
 
-                <a class="connect-item" href="https://linkedin.com/in/rohini082005" target="_blank">
+
+
+                <a class="connect-item"
+                   href="https://linkedin.com/in/rohini082005"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
                     <span>
                         LinkedIn
-                        <span class="plat">rohini082005</span>
+                        <span class="plat">
+                            rohini082005
+                        </span>
                     </span>
-                    <span>↗️</span>
+
+                    <span>↗</span>
+
                 </a>
 
             </div>
 
         </div>
+
 
 
         <!-- CONTACT FORM -->
@@ -817,43 +976,86 @@
                 Submitting opens your email app with the message prepared.
             </p>
 
+
             <form id="contactForm">
 
                 <div class="f-group">
+
                     <label for="cf-name">Name</label>
-                    <input type="text" id="cf-name" required>
+
+                    <input
+                        type="text"
+                        id="cf-name"
+                        name="name"
+                        placeholder="Your name"
+                        autocomplete="name"
+                        required>
+
                 </div>
 
+
                 <div class="f-group">
+
                     <label for="cf-email">Your Email</label>
-                    <input type="email" id="cf-email" required>
+
+                    <input
+                        type="email"
+                        id="cf-email"
+                        name="email"
+                        placeholder="Your email address"
+                        autocomplete="email"
+                        required>
+
                 </div>
 
+
                 <div class="f-group">
+
                     <label for="cf-msg">Message</label>
-                    <textarea id="cf-msg" required></textarea>
+
+                    <textarea
+                        id="cf-msg"
+                        name="message"
+                        placeholder="Write your message..."
+                        rows="5"
+                        required></textarea>
+
                 </div>
+
 
                 <button type="submit" class="btn btn-fill">
-                    Send Message ↗️
+                    Send Message ↗
                 </button>
 
-                <div class="form-status" id="formStatus"></div>
+                <div
+                    class="form-status"
+                    id="formStatus"
+                    role="status"
+                    aria-live="polite">
+                </div>
 
             </form>
 
         </div>
 
     </div>
+
 </section>
 
 
 <!-- FOOTER -->
 <footer>
+
     <div class="container footer-inner">
-        <span>©️ 2026 Rohini S.</span>
+
+        <span>© 2026 Rohini S. All rights reserved.</span>
+
         <span>Tamil Nadu, India</span>
+
+        <a href="#heroSection">Back to top ↑</a>
+
     </div>
+
 </footer>
 
 
