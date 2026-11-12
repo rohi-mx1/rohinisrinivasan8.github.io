@@ -879,11 +879,10 @@ footer {
     .footer-inner {
         flex-direction: column;
     }
-}
-.project-preview {
+}.project-preview {
     width: 100%;
-    max-width: 655px;
-    height: 270px;
+    max-width: 450px;
+    height: 200px;
     position: relative;
     overflow: hidden;
     perspective: 1000px;
@@ -894,16 +893,13 @@ footer {
 }
 
 .rotate-image {
-    width: 78%;
-    height: 100%;
+    width: 75%;
+    height: 85%;
     cursor: grab;
     transform-style: preserve-3d;
     transform: rotateY(-12deg);
     transition: transform 0.15s ease;
-}
-
-.rotate-image:active {
-    cursor: grabbing;
+    touch-action: pan-y;
 }
 
 .rotate-image img {
@@ -912,16 +908,4 @@ footer {
     object-fit: contain;
     user-select: none;
     pointer-events: none;
-}
-
-.rotate-hint {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: #ffa32b;
-    font-size: 11px;
-    letter-spacing: 1px;
-}.rotate-image {
-    touch-action: pan-y;
-    user-select: none;
 }
