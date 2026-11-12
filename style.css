@@ -2297,7 +2297,7 @@ button:focus-visible {
 /* Dashboard image */
 .internship-image {
     width: 100%;
-    height: 273px;
+    height: 200px;
     overflow: hidden;
     border: 1px solid rgba(255,255,255,0.09);
     border-radius: 9px;
@@ -2305,8 +2305,8 @@ button:focus-visible {
 }
 
 .internship-image img {
-    width: 100%;
-    height: 100%;
+    width: 75%;
+    height: 85%;
     object-fit: contain;
     display: block;
 }
@@ -2364,6 +2364,6 @@ button:focus-visible {
     }
 
     .internship-image {
-        height: 220px;
+        height: 170px;
     }
 }
